@@ -24,6 +24,14 @@ public class DistributionApplication {
 					.save(DistributionCentre.builder().name("Warehouse 1").latitude(53.5229f).longitude(-113.6216f)
 							.build());
 
+			var distributionCentre2 = dcRepository
+					.save(DistributionCentre.builder().name("Warehouse 2").latitude(45.5017f).longitude(73.5673f)
+							.build());
+
+			var distributionCentre3 = dcRepository
+					.save(DistributionCentre.builder().name("Warehouse 3").latitude(53.5461f).longitude(113.4909f)
+							.build());
+
 			itemRepository
 					.save(Item.builder().name("Polo Shirt").price(1099.99f).quantity(17).yearCreated(2021)
 							.brand("Nike").distributionCentre(distributionCentre1).build());
@@ -34,10 +42,6 @@ public class DistributionApplication {
 					.save(Item.builder().name("T-Shirt").price(1100.39f).quantity(8).yearCreated(2021)
 							.brand("Gucci").distributionCentre(distributionCentre1).build());
 
-			var distributionCentre2 = dcRepository
-					.save(DistributionCentre.builder().name("Warehouse 1").latitude(53.5229f).longitude(-113.6216f)
-							.build());
-
 			itemRepository
 					.save(Item.builder().name("Polo Shirt").price(1000.09f).quantity(1).yearCreated(2021)
 							.brand("Nike").distributionCentre(distributionCentre2).build());
@@ -47,10 +51,6 @@ public class DistributionApplication {
 			itemRepository
 					.save(Item.builder().name("T-Shirt").price(1001.99f).quantity(0).yearCreated(2021)
 							.brand("Gucci").distributionCentre(distributionCentre2).build());
-
-			var distributionCentre3 = dcRepository
-					.save(DistributionCentre.builder().name("Warehouse 1").latitude(53.5229f).longitude(-113.6216f)
-							.build());
 
 			itemRepository
 					.save(Item.builder().name("Polo Shirt").price(1000.39f).quantity(0).yearCreated(2021)
